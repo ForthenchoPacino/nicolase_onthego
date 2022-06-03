@@ -1,0 +1,15 @@
+Having Micro-Manager v2.0 or higher is a prerequisite to running this.
+Paste NicoLase.jar in the MM plugins directory, which is usually located at C:\Program Files\Micro-Manager-2.0\mmplugins
+Paste both the NicoLase_config_file.txt and NicoLase_config_file.cfg in the main MM directory: C:\Program Files\Micro-Manager-2.0
+The .cfg file is the hardware configuration file that Micro-Manager uses to read and interface with the Arduino board.
+The .txt file can be edited as per the requirements of the procedure:
+
+
+                      Arduino Com Port : 3                             ==> change value of COM port as per system
+                      Number of Arduino Channels (up to 6) : 4         ==> 4 channels were used for the purpose of the project, but the maximum number of usable                                                                              channels depends on the type of Arduino Board being used
+                      Channel Names : 404 nm,491 nm,517 nm,561 nm      ==> channel names can be any arbitrary term to demarcate and identify different                                                                                      apparatuses being connected to the board, but it is best to use laser wavelength for                                                                            easy identification
+                      Trigger Property name : Trigger
+                      Software Trigger Option : Software               ==> sets what triggers the board. for better and seamless interface, software is                                                                                    recommended
+                      External Trigger Option : External               ==> sets external trigger option. external trigger here means that the Arduino board will                                                                            send all trigger signals to the lasers and cameras
+                     
+ IMPORTANT: Change the value of COM port in the .cfg file as well, otherwise board/software interface will NOT occur
