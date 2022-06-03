@@ -1,0 +1,2 @@
+To initate interface, run AOTFController.ino, located inside the laser_control folder, to relay pin and switch configuration instructions to the Arduino board
+Both laser_control and laser_loop need to run in tandem for the program to function properly. laser_control has this already there, with laser_loop being put in as a failsafe.
