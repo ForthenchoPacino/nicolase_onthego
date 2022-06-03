@@ -1,0 +1,14 @@
+Hardware assembly requires the following parts:
+
+4x 10K resistors
+4x 0.1uF capacitors
+2x 7432 Quad 2-input OR gate
+10x 4050D non-inverting HIGH to LOW buffer
+10x CD74HC125 non-inverting LOW to HIGH buffer
+5x I2C bi-directional converter
+BNC cables
+8x MX416 BNc to Analog converters
+Arduino UNO board
+
+NOTE: The number of analog components mentioned also accounts for back-ups, in case any of the components gets damaged during assemby or working
+NOTE: Both the buffers and the bi-directional converter are there to serve the same base purpose, that is, to convert outgoing signal from the OR gate from 3.3v       to 5v. However, there had been some confusion in interpreting the power conversion polarity, and to prepare for all possible continginces, all three types       of converters have been listed 
